@@ -1,0 +1,13 @@
+<div class="navbar navbar-inverse bg-info">
+    <a class="navbar-branch">SPORTS STORE Admin</a>
+</div>
+<div class="m-t-1">
+    <div class="col-xs-3">
+        <button class="btn" routerLink="/admin/main/products" routerLinkActive="active">Products</button>
+        <button class="btn" routerLink="/admin/main/orders" routerLinkActive="active">Orders</button>
+        <button class="btn" (click)="logout()">Logout</button>
+    </div>
+    <div class="col-xs-9">
+        <router-outlet></router-outlet>
+    </div>
+</div>
